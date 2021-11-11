@@ -421,6 +421,9 @@ form .map iframe{
     /* --------Education-------------- */
     /* --------Skill-------------- */
     /* ---------Contact-------------- */
+    .contact-section{
+        width: 60%;
+    }
     .group-form{
         flex-wrap: wrap;
     }

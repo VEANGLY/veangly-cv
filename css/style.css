@@ -98,13 +98,12 @@ nav .navigate a:hover{
     border-radius: 50%;
     margin: 10px 5px;
 }
-/* ================footer=========== */
+/* =============================footer=========== =====================*/
 footer{
     display: flex;
     justify-content: center;
-    height: 35vh;
-    border: 1px solid #F79F1F;
-    background: #383838;
+    border: 1px solid #2b2a2a;
+    /* background: #383838; */
     margin-top: 1rem;
 }
 .footer-group{
@@ -165,7 +164,7 @@ footer{
     margin-left: 5px;
     color: #Fff;
 }
-/* --------------------------About--------------------- */
+/* ----------------------------------- Contact pages ------------------------------------------- */
 .ban-contact{
     height: 60vh;
     width: 100%;
@@ -191,7 +190,7 @@ footer{
     font-size: 1.2rem;
 
 }
-/* ====1== */
+/* ===========1========= */
 .contact-section{
     width: 50%;
     margin: 10px auto;
@@ -323,8 +322,122 @@ form .map{
 form .map iframe{
     width: 100%;
     height: 40vh;
+}
+
+/* ==================Favorite pages==================================== */
+.ban-favorite{
+    background-image: url(/images/favorite.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    opacity: 0.6;
+    padding: 10px;
+}
+
+.ban-favorite .favorite-banner{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+}
+.ban-favorite .favorite-banner p{
+    padding: 10px;
+    width: 30%;
+    border:1px solid #fff;
+    margin: 5px auto;
+    text-align: center;
 
 }
+.ban-favorite .favorite-banner p:hover{
+    width: 31%;
+}
+
+.ban-favorite .favorite-banner p a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+}
+.ban-favorite .favorite-banner p a:hover{
+    color: #F79F1F;
+}
+/* ---====--- */
+section{
+    margin: auto;
+    margin-top: 5rem;
+    /* background: cyan; */
+}
+section h1{
+    padding: 10px;
+    width: 20%;
+    margin: 15px auto;
+    background: none;
+    text-align: center;
+    border: 1px solid #fff;
+    color: #F79F1F;
+}
+section .sectoin-group{
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    border-bottom: 2px solid rgb(133, 131, 131);
+}
+section .sectoin-group .culumn-4{
+    width: 32%;
+    padding: 10px;
+    height: auto;
+    padding: 10px;
+}
+section .sectoin-group .culumn-4:hover{
+    background: rgb(22, 22, 22);
+}
+/* ====images=== */
+section .sectoin-group .culumn-4 .image{
+    /* background-image: url(/images/fooball.jpg); */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: auto;
+    width: 90%;
+    margin: auto;
+}
+section .sectoin-group .culumn-4 .image img{
+   width:100%;
+   height: 60vh;
+   border: 1px solid #F79F1F;
+}
+
+section .sectoin-group .culumn-4 .section-text{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+section .sectoin-group .culumn-4 .section-text h4{
+   color: #F79F1F;
+   text-align: center;
+}
+section .sectoin-group .culumn-4 .section-text p{
+    color: #fff;
+}
+section .sectoin-group .culumn-4 .section-text a button{
+    padding: 8px 20px;
+    background: #F79F1F;
+    text-align: center;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+section .sectoin-group .culumn-4 .section-text .favorite-icon .fa{
+    font-size: 1.2rem;
+    color: #F79F1F;
+    margin-top: 10px;
+}
+/* section .sectoin-group .culumn-4 .section-text span */
 /* -----------------  Responsive Component------------------------------ */
 @media(max-width: 1023px)
 {
@@ -344,7 +457,7 @@ form .map iframe{
     /* --------Footer-------------- */
     footer{
         flex-wrap: wrap;
-        height: 70vh;
+        height: auto;
     }
     .footer-group{
         width: 45%;
@@ -366,10 +479,21 @@ form .map iframe{
     }
 
     /* --------About-------------- */
-    /* --------Hobb-------------- */
+    /* ---------------------------favorite-------------- */
+    section .sectoin-group{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    section .sectoin-group .culumn-4{
+        width: 45%;
+        height: auto;
+    }
     /* --------Education-------------- */
     /* --------Skill-------------- */
     /* ---------Contact-------------- */
+    .contact-section{
+        width: auto;
+    }
     .requiment{
         width: 60%;
     }
@@ -380,7 +504,7 @@ form .map iframe{
 
 @media(max-width: 760px){
     nav{
-        height: 50vh;
+        height: auto;
     }
     nav .navigate{
         flex-wrap: wrap;
@@ -396,11 +520,11 @@ form .map iframe{
     /* -------footer-------------- */
     footer{
         flex-wrap: wrap;
-        height: 140vh;
+        height: auto;
     }
     .footer-group{
-        width: 90%;
-        height: 35vh;
+        width: 60%;
+        margin: auto;
     }
     /* --------Home-------------- */
     .home-banner{
@@ -417,12 +541,24 @@ form .map iframe{
     margin-left: 0;
     }
     /* --------About-------------- */
-    /* --------Hobb-------------- */
+    /* ------------------Favorite-------------- */
+    section .sectoin-group{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    section .sectoin-group .culumn-4{
+        width: 100%;
+        height: auto;
+    }
+    .ban-favorite .favorite-banner p{
+        width: 40%;
+    }
     /* --------Education-------------- */
     /* --------Skill-------------- */
     /* ---------Contact-------------- */
     .contact-section{
-        width: 80%;
+        width: auto;
+        height: auto;
     }
     .group-form{
         flex-wrap: wrap;

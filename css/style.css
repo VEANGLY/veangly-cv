@@ -9,7 +9,6 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
     padding: 10px;
    
 }
@@ -37,16 +36,15 @@ nav .navigate a{
     font-size: 1.2rem;
 }
 nav .navigate a:hover{
-    /* color: #f6b93b; */
-    color: #F79F1F;
+    color: red;
 }
 #active{
-    background: #F79F1F;
+    background: red;
 }
 #active:hover{
     color: #fff;
 }
-/* =======Start section======= */
+/* =============================Start section================================ */
 .home-banner{
     width: 80%;
     margin: auto auto 2rem auto;
@@ -54,7 +52,7 @@ nav .navigate a:hover{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    height: 55vh;
+    /* height: 55vh; */
 }
 .image-bar{
     width: 40%;
@@ -63,34 +61,37 @@ nav .navigate a:hover{
     justify-self: end;
 }
 .image-bar img{
-    width: 60%;
+    width: 100%;
     margin: auto;
-    background: rgb(133, 131, 131);
-    border: 1px solid #Fff;
-    
 }
 .right-bar{
-    width: 50%;
+    width: 60%;
     color: #fff;
     cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
 }
 .right-bar h1 span{
-    color: #F79F1F;
+    color: red;
     margin-left: 3rem;
 }
 .right-bar a button{
-    padding: 10px 20px;
+    width: 30%;
+    padding: 10px;
     background: #fff;
     border: none;
     text-transform: uppercase;
-    border: 1px solid #F79F1F;
+    color: red;
 }
 .right-bar .orange button{
-    background: #F79F1F;
+    background: red;
     color: #fff;
 }
 .group-media{
+     width: 80%;
     display: flex;
+    justify-content: center;
+    margin: auto;
 }
 .group-media img{
     width: 30px;
@@ -98,43 +99,46 @@ nav .navigate a:hover{
     border-radius: 50%;
     margin: 10px 5px;
 }
-/* =============================footer=========== =====================*/
+/* ============================= footer =========== =====================*/
 footer{
     display: flex;
-    justify-content: center;
-    border: 1px solid #2b2a2a;
+    justify-content: space-between;
+    border-top: 1px solid #2b2a2a;
     /* background: #383838; */
     margin-top: 1rem;
+    width: 90%;
+     margin: auto;    
 }
-.footer-group{
-    width: 28%;
-    margin: 0 5px;
+footer .footer-group{
+    width: 30%;
+    margin: 10px;
     padding: 10px;
+    /* background: red; */
     
 }
-.left-footer{
+footer .left-footer{
     line-height: 0.5;
-    margin: auto;
+    text-align: center;
+    /* background: cyan; */
 }
-.left-footer h2{
-    color: #F79F1F;
-    font-size: 1.8rem;
+footer .left-footer h3{
+    color: red;
     font-weight: bold;
-    margin-left: 78px;
+    font-size: 1.6rem;
 }
-.left-footer p{
-    font-size: medium;
+footer .left-footer h5{
+    font-size: small;
     color: #fff;
-    margin-left: 80px;
+    
 }
 
-.right-footer, .mid-footer{
+footer .right-footer, footer .mid-footer{
     text-align: center;
     line-height: 1.6;
-
+    /* background: pink; */
 }
 .icon-footer{
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     margin: auto;
@@ -148,57 +152,45 @@ footer{
     border-radius: 50%;
     padding: 5px;
     margin: 0 10px;
-    border: 1px solid #fff;
+    border: 1px solid red;
 }
 .icon-footer a .fa, .icon-footer a .material-icons{
     padding: 10px;
-    color: #F79F1F;
+    color: #fff;
     font-size: 1.2rem;
 }
 .icon-footer a:hover{
-    background: #Fff;
+    background: red;
 
 }
 .icon-footer p{
-    font-size: smaller;
+    font-size: 16px;
     margin-left: 5px;
     color: #Fff;
 }
 /* ----------------------------------- Contact pages ------------------------------------------- */
-.ban-contact{
-    height: 60vh;
-    width: 100%;
-    background-image: url(/images/contact-ban.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.man-banner{
+    width: 80%;
     margin: auto;
-    text-align: center;
-    padding: 10px;
-    opacity: 0.4;
-   
-   
 }
-.ban-contact img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 1px solid #fff;
+.man-banner iframe{
+    width: 100%;
+    height: 80vh;
 }
-.ban-contact h1{
-    color: #F79F1F;
-    font-size: 1.2rem;
-
+.contact-section h2{
+  padding: 10px 20px;
+  color: red;
+  border: 1px solid #fff;
+  width: 30%;
+  margin: 20px auto;
+  text-align: center;
 }
-/* ===========1========= */
 .contact-section{
     width: 50%;
-    margin: 10px auto;
+    margin: 40px auto;
     padding: 10px;
     border: 0.1px solid rgb(56, 55, 55);
     position: relative;
-    border-top: none;
-    top: -120px;
 }
 .group-form, .center{
     width: 80%;
@@ -206,27 +198,40 @@ footer{
     display: flex;
     justify-content: center;
 }
-.form-control{
+.login-btn .top{
     width: 48%;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1rem;
     outline: none;
-    border: none;
     font-weight: bold;
     border-bottom: 2px solid #fff;
     padding: 10px;
     background: none;
     margin: 5px;
 }
-.form-control:hover{
-    border-bottom: 2px solid #F79F1F;
+.form-control{
+    width: 48%;
+    color: #fff;
+    font-size: 10px;
+    outline: none;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+    padding: 15px;
+    background: none;
+    margin: 5px;
+}
+.form-control:hover, .top:hover{
+    border-bottom: 2px solid red;
 }
 .group-form{
     display: flex;
     width: 80%;
 }
+.login-btn{
+    flex-wrap: wrap;
+}
 ::placeholder, .check span{
-    color: #F79F1F;
+    color: red;
     text-transform: capitalize;
     font-weight: normal;
     font-size: 0.8rem;
@@ -235,7 +240,6 @@ footer{
     border-bottom: none;
     text-align: center;
 }
-
 .group-icon-con{
     width: 80%;
     margin: auto;
@@ -247,7 +251,7 @@ footer{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border: 1px solid #F79F1F;
+    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,46 +267,49 @@ footer{
 }
 .group-icon-con a .fa:hover{
     font-size: 1.6rem;
-    color: #F79F1F;
+    color: red;
 }
-form .text-form {
-    width: 78%;
+.display{
+    width: 79%;
     margin: auto;
 }
-/* ----- */
-.group-requiment{
+.display a{
+    font-size: smaller;
+}
+.requiement{
     width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
+     color: #fff;
+     font-size: 8px;
+    flex-wrap: wrap;
 }
-
-.requiment{
-    width: 40%;
-    padding: 5px;
-    font-size: smaller; 
-}
-.requiment a{
-    margin-left: 3rem;
-}
-.requiment .drop{
-    width: 80%;
-    color: #fff;
-    font-size: 8px;
-    line-height: 0.5;
-    margin: 5px 20px;
-    background: rgb(14, 13, 13);
+.requiement .drop{
+    width: 48%;
     text-align: center;
-}
-
-/* ---- */
-form .text-form p{
-    color: #F79F1F;
     color: #fff;
-    font-size: 8px;
-    line-height: 0.5;
-    margin: 5px 20px;
-    background: rgb(19, 18, 18);
+}
+.requiement .group-form{
+    width: 48%;
+}
+.requiement .group-form input{
+    width: 100%;
+}
+.requiement .drop h3{
+    color: red;
+}
+form .text-form {
+    width: 77%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form .text-form p{
+    width: 48%;
+    color: #Fff;
+    text-align: center;
 }
 form nav {
     width: 80%;
@@ -310,59 +317,49 @@ form nav {
 }
 form nav a button{
     padding: 10px 20px;
-    background: #F79F1F;
+    background: red;
     color: #fff;
     border: 1px solid #fff;
 }
-form .map{
-    width: 80%;
-    height: 40vh;
-    margin: auto;
-}
-form .map iframe{
-    width: 100%;
-    height: 40vh;
-}
-
-/* ==================Favorite pages==================================== */
-.ban-favorite{
+/* ==================Favorite pages==================================== ====================================*/
+.ban-favorite,
+.banner-edu,
+.edu-image .image,
+.edu-image .pnc,
+.edu-image .high,
+.edu-image .second{
     background-image: url(/images/favorite.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
-    opacity: 0.6;
+    height: 55vh;
     padding: 10px;
 }
-
 .ban-favorite .favorite-banner{
     width: 60%;
     height: auto;
     margin: auto;
+   text-align: center;
     padding: 10px;
 }
-.ban-favorite .favorite-banner p{
-    padding: 10px;
-    width: 30%;
-    border:1px solid #fff;
-    margin: 5px auto;
-    text-align: center;
-
-}
-.ban-favorite .favorite-banner p:hover{
-    width: 31%;
-}
-
-.ban-favorite .favorite-banner p a{
-    text-decoration: none;
-    color: #fff;
+.ban-favorite .favorite-banner a button{
     text-transform: capitalize;
-    font-size: 1.4rem;
+    padding: 10px 20px;
+    width: 30%;
+    border:  1px solid #fff;
+    text-align: center;
+    margin-top: 5px;
+    /* outline: none; */
+    background: none;
+    font-size: 1.6rem;
+    color:#fff;
+    background: rgb(20, 20, 20);
+    opacity: 0.5;
+}.ban-favorite .favorite-banner a button:hover{
+    color: red;
+    background: rgb(83, 83, 83);
+    font-weight: bold;
 }
-.ban-favorite .favorite-banner p a:hover{
-    color: #F79F1F;
-}
-/* ---====--- */
 section{
     margin: auto;
     margin-top: 5rem;
@@ -374,34 +371,30 @@ section h1{
     margin: 15px auto;
     background: none;
     text-align: center;
-    border: 1px solid #fff;
-    color: #F79F1F;
+    border: 1px solid red;
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
 }
 section .sectoin-group{
     width: 90%;
     margin: auto;
-    padding: 5px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: auto;
     border-bottom: 2px solid rgb(133, 131, 131);
+    margin-bottom: 3rem;
 }
 section .sectoin-group .culumn-4{
-    width: 32%;
-    padding: 10px;
+    width: 30%;
+    padding: 15px 10px 15px 10px;
     height: auto;
     padding: 10px;
+    background: rgb(31, 30, 30);
 }
-section .sectoin-group .culumn-4:hover{
-    background: rgb(22, 22, 22);
-}
-/* ====images=== */
 section .sectoin-group .culumn-4 .image{
-    /* background-image: url(/images/fooball.jpg); */
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
     height: auto;
     width: 90%;
     margin: auto;
@@ -409,7 +402,7 @@ section .sectoin-group .culumn-4 .image{
 section .sectoin-group .culumn-4 .image img{
    width:100%;
    height: 60vh;
-   border: 1px solid #F79F1F;
+   border: 1px solid red;
 }
 
 section .sectoin-group .culumn-4 .section-text{
@@ -418,26 +411,344 @@ section .sectoin-group .culumn-4 .section-text{
     text-align: center;
 }
 section .sectoin-group .culumn-4 .section-text h4{
-   color: #F79F1F;
+   color: red;
    text-align: center;
+   font-size: 1.2rem;
+   text-transform: uppercase;
 }
 section .sectoin-group .culumn-4 .section-text p{
     color: #fff;
 }
 section .sectoin-group .culumn-4 .section-text a button{
     padding: 8px 20px;
-    background: #F79F1F;
+    background: none;
     text-align: center;
     outline: none;
     border: none;
     color: #fff;
+    border: 1px solid red;
+    text-transform: capitalize;
 }
 section .sectoin-group .culumn-4 .section-text .favorite-icon .fa{
     font-size: 1.2rem;
-    color: #F79F1F;
+    color: red;
     margin-top: 10px;
 }
-/* section .sectoin-group .culumn-4 .section-text span */
+/* ------------------------Education -------------------------------- */
+.banner-edu{
+    background-image: url(/images/ban-edu.jpg);
+    height: 60vh;
+}
+.banner-edu h2{
+    color: #fff;
+    font-size: 2rem;
+    position: relative;
+    top: 80px;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    background: red;
+    padding: 10px 20px;
+    width: 25%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.edu-section {
+    margin-bottom: 20px;
+}
+.edu-section .group-edu{
+    background: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+.edu-section .group-edu .edu{
+    width: 46%;
+    /* background: #Fff; */
+    padding: 15px;
+   
+}
+.edu-image .image{
+    background-image: url(/images/primary.jpg);
+    height: 50vh;
+}
+.edu-image .pnc{
+    background-image: url(/images/pnc.jpg);
+    height: 50vh;
+}
+.edu-image .high{
+    background-image: url(/images/edu.jpg);
+    height: 50vh;
+}
+.edu-image .second{
+    background-image: url(/images/scondary.jpg);
+    height: 50vh;
+}
+.edu-image .image h3{
+    background: red;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.6rem;
+    width:50%;
+    text-align: center;
+    position: relative;
+    top: -30px;
+    border-bottom: 2px solid #000;
+ } 
+.edu-section .group-edu .edu-text{
+    text-align: center;
+    color: #Fff; 
+}
+.edu-section .group-edu .edu-text h2{
+    color: red;
+    text-transform: uppercase;
+}
+.edu-section .group-edu .edu-text p{
+    font-size: 1.4rem;
+}
+/* ------------------------------- About me -------------------------------------------- */
+.title-about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 4rem;
+}
+.title-about h1{
+    color: red;
+    padding: 10px;
+    width: 40%;
+    font-size: 3rem;
+    margin: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.title-about p{
+    color: #fff;
+    font-size: 2rem;
+}
+.about-me{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.about-me .profile{
+    width: 45%;
+    /* padding: 10px; */
+    background: rgb(36, 36, 36);
+    border: 1px solid rgb(48, 47, 47);
+}
+.about-me .profile img{
+    width: 100%;
+  
+}
+.about-me .information{
+    width: 55%;
+    padding: 10px 30px;
+    text-align: center;
+    background: #0c0c0c;
+    border: 1px solid rgb(48, 47, 47);
+}
+.about-me .information h2{
+    color:red;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.about-me .information p{
+    color:#fff;
+    font-size: 1.4rem;
+}
+.about-me .information .icon-information{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-me .information .icon-information .icon-text{
+    width: 46%;
+    padding: 10px;
+    display: flex;
+}
+.about-me .information .icon-information .icon-text p{
+    font-size: 15px;
+    margin:10px;
+    color: red;
+}
+.about-me .information .icon-information .icon-text .fa, .material-icons{
+    color: #5c5b5b;
+    font-size: 2rem;
+}
+/* ==============================Skill Page================================= */
+.banner-skill{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid red;
+    flex-wrap: wrap;
+}
+.text-skill{
+    padding: 10px;
+    margin: 5px;
+    width: 46%;
+    text-align: center;
+}
+.text-skill h1{
+    color: red;
+    text-transform: uppercase;
+}
+.text-skill p{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.text-skill  button{
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    color: red;
+    border: 1px solid red;
+}
+.image-skill{
+    padding: 10px;
+    width: 46%;
+    }
+.image-skill img{
+    width: 80%;
+    margin: auto;
+}
+.section-skill{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+.sidebar{
+    width: 40%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid rgb(36, 36, 36);
+}
+.sidebar h3{
+    color: red; 
+    padding: 10px;
+    margin: 10px;
+    width: 40%;
+    margin:15px auto;
+    text-align: center;
+    border: 1px solid #fff;
+    
+}
+.sidebar .cycle-level{
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.sidebar .cycle-level img{
+    width: 60px;
+    height: 60px;
+}
+.sidebar .cycle-level {
+    color: #fff;
+}
+.half-one{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+.degree-skill{
+    width: 100%;
+    background: #fff;
+    height: 2px; 
+}
+.sub-degree1{
+    width: 95%;
+    background: red;
+    height: 2px;
+}
+.sub-degree2{
+    width: 90%;
+    background: red;
+    height: 2px;
+}
+.sub-degree3{
+    width: 85%;
+    background: red;
+    height: 2px;
+}
+.sub-degree4{
+    width: 70%;
+    background: red;
+    height: 2px;
+}
+.sub-degree5{
+    width: 60%;
+    background: red;
+    height: 2px;
+}
+.subject{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #Fff;
+}
+/* ----------right bar----------- */
+.rightbar{
+    width: 54%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(49, 49, 49);
+    background: rgb(22, 22, 22);
+    margin: 5px;
+}
+.rightbar h2{
+    color: red;
+    padding: 10px;
+    width: 40%;
+    margin: auto;
+}
+.experiences{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.sub-experiences{
+    width: 30%;
+    padding: 10px 5px;
+}
+.team-card{
+    display: flex;
+    justify-self: space-between;
+    padding: 10px;
+}
+.culumn{
+    width: 30%;
+    border: 1px solid #fff;
+    padding: 5px;
+    margin: 5px;
+}
+.culumn h5{
+    color: #fff;
+}
+.culumn p{
+    color: #fff;
+    font-size: 6px;
+    margin: 10px;
+}
+.culumn button{
+    padding: 8px 10px;
+    color: red;
+    order: 1px solid #fff;
+    margin: 10px;
+    font-size: medium;
+    background: none;
+}
+.culumn .skill-icon .fa{
+    color: red;
+    margin: 10px;
+}
 /* -----------------  Responsive Component------------------------------ */
 @media(max-width: 1023px)
 {
@@ -451,19 +762,21 @@ section .sectoin-group .culumn-4 .section-text .favorite-icon .fa{
         margin: auto;
     }
     /* ----------home----------- */
-    .home-banner{
-        height: 70vh;
-    }
     /* --------Footer-------------- */
     footer{
         flex-wrap: wrap;
         height: auto;
+        width: 100%;
     }
-    .footer-group{
-        width: 45%;
+    footer .footer-group{
+        width: 44%;
+        background: rgb(15, 15, 15);
+        text-align: center;
+    }
+    .icon-footer{
+        width: 100%;
     }
    /* --------Home-------------- */
-    
     .image-bar {
         width: 40%;
     }
@@ -477,31 +790,65 @@ section .sectoin-group .culumn-4 .section-text .favorite-icon .fa{
     .right-bar h1 span{
         margin-left: 0;
     }
-
     /* --------About-------------- */
+    .about-me{
+        flex-wrap: wrap;
+    }
+    .about-me .profile{
+        width: 80%;
+        margin: auto;
+    }
+    .about-me .information{
+        width: 80%;
+        margin: auto;
+    }
     /* ---------------------------favorite-------------- */
     section .sectoin-group{
+        width: 100%;
         flex-wrap: wrap;
         height: auto;
     }
     section .sectoin-group .culumn-4{
-        width: 45%;
+        width: 46%;
         height: auto;
     }
+    .ban-favorite .favorite-banner a button{
+        width: 60%;
+        padding: 10px 10px;
+    }
     /* --------Education-------------- */
+    .banner-edu h2{
+        width: 30%;
+
+    }
     /* --------Skill-------------- */
+    .text-skill{
+        width: 80%;
+        margin: auto;
+    }
+    .image-skill{
+        width: 80%;
+        margin: auto;
+    }
+    .sidebar{
+        width: 80%;
+        margin: auto;
+    }
+    .rightbar{
+        width: 80%;
+        margin: auto;
+    }
     /* ---------Contact-------------- */
     .contact-section{
         width: auto;
     }
     .requiment{
-        width: 60%;
+        width: 50%;
     }
     .requiment .drop{
-        width: 100%;
+        width: 40%;
     }
 }
-
 @media(max-width: 760px){
     nav{
         height: auto;
@@ -519,12 +866,19 @@ section .sectoin-group .culumn-4 .section-text .favorite-icon .fa{
     }
     /* -------footer-------------- */
     footer{
-        flex-wrap: wrap;
-        height: auto;
+        width: 80%;
     }
-    .footer-group{
+    footer .footer-group{
+        width: 100%;
+        margin: auto;
+        margin: 5px;
+    }
+   .icon-footer{
         width: 60%;
         margin: auto;
+    }
+    .culumn-4 .image img{
+        width: 50%;
     }
     /* --------Home-------------- */
     .home-banner{
@@ -533,29 +887,104 @@ section .sectoin-group .culumn-4 .section-text .favorite-icon .fa{
     .right-bar, .image-bar{
         width: 100%;
       width: 100%;
+      text-align: center;
     }
     .image-bar img{
-        width: 70%;
+        width: 90%;
     }
     .right-bar h1 span{
     margin-left: 0;
     }
+    .group-media{
+        width: 40%;
+        margin: auto;
+    }
+    .group-media img{
+        width: 40px;
+        height: 40px;
+    }
     /* --------About-------------- */
+    .about-me .profile{
+        width: 100%;
+        margin: auto;
+    }
+    .about-me .information{
+        width: 100%;
+    }
+    .about-me .information .icon-information .icon-text{
+        width: 80%;
+        margin: auto;
+    }
+    .title-about h1{
+        width: 60%;
+    }
     /* ------------------Favorite-------------- */
     section .sectoin-group{
         flex-wrap: wrap;
         height: auto;
+        margin: 5px;
     }
     section .sectoin-group .culumn-4{
         width: 100%;
         height: auto;
+        margin: 5px;
     }
-    .ban-favorite .favorite-banner p{
-        width: 40%;
+    .ban-favorite .favorite-banner a button{
+        width: 80%;
     }
-    /* --------Education-------------- */
+    section h1{
+        width: 60%;
+    }
+    /* -------------------------- ---Education --------------------------------- */
+    .edu-section .group-edu{
+        flex-wrap: wrap;
+    }
+    
+    .edu-section .group-edu .edu{
+        width: 98%;
+        margin: auto;
+    }
+    .banner-edu h2{
+        width: 50%;
+        position: relative;
+        top: 150px;
+    }
     /* --------Skill-------------- */
-    /* ---------Contact-------------- */
+    .text-skill{
+        width: 100%;
+        margin: auto;
+    }
+    .image-skill{
+        width: 100%;
+        margin: auto;
+    }
+    .sidebar{
+        width: 100%;
+        margin: auto;
+    }
+    .rightbar{
+        width: 100%;
+        margin: auto;
+    }
+    .rightbar h2{
+        width: 50%;
+    }
+    .culumn button{
+        padding: 8px;
+        color: red;
+        order: 1px solid #fff;
+        margin: 5px;
+        font-size: 10px;
+    }
+    .culumn .skill-icon .fa{
+        color: red;
+        margin: 2px;
+        font-size: 12px;
+    }
+    .experiences{
+        width: 100%;
+    }
+    /* ------------------------Contact-------------- */
     .contact-section{
         width: auto;
         height: auto;
@@ -563,28 +992,23 @@ section .sectoin-group .culumn-4 .section-text .favorite-icon .fa{
     .group-form{
         flex-wrap: wrap;
     }
-    .group-requiment{
-        flex-wrap: wrap;
-    }
-    .group-requiment a{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        
-    }
-    .group-requiment a span{
-        font-size: 0.5rem;
-    }
-    .group-requiment a {
-        width: 100%;
-        margin: auto;
+    .requiment{
+        align-items: center;
     }
     .requiment .drop{
-        width: 80%;
-        text-align: center;
-    }
-    .group-requiment .requiment{
         width: 100%;
-        margin: 5px;
+    }
+    .login-btn .top{
+        width: 50%;
+        margin: auto;
+        margin: 5px 10px;
+    }
+    form .text-form {
+        flex-wrap: wrap;
+    }
+    form .text-form p{
+        width: 100%;
+        margin: auto;
+        font-size: 10px;
     }
 }
